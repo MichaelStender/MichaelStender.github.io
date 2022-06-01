@@ -1,0 +1,133 @@
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+        <div class="media d-flex align-items-center"><img src="assets/img/BRAM-head.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+            <div class="media-body">
+                <h4 class="m-0">Michael Stender</h4>
+                <p class="font-weight-light text-muted mb-0">Coding Monkey</p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="sidebar nav flex-column bg-white mb-0" id="nav_accordion">
+        <li class="nav-item">
+            <a [routerLink]="['/home']" class="nav-link text-dark font-italic"><i class="mr-3 text-primary fa-fw"><fa-icon [icon]="home"></fa-icon></i> Dashboard</a>
+        </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Acties</p>
+
+    <ul class="sidebar nav flex-column bg-white mb-0" id="nav_accordion">
+        <li class="nav-item has-submenu">
+            <a href="#" class="nav-link text-dark font-italic">
+                <i class="mr-3 text-primary fa-fw"><fa-icon [icon]="tasks"></fa-icon></i> Taken</a>
+            <ul class="submenu collapse">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/today']"><i class=" mr-3 text-primary fa-fw "><fa-icon [icon]="ttoday "></fa-icon></i> Taken vandaag </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/open']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="topen "></fa-icon></i> Openstaande taken </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/future']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="toverview "></fa-icon></i> Toekomstige taken </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="audits "></fa-icon></i> Audits</a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="vens "></fa-icon></i> Veilig & Schoon </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="swim "></fa-icon></i> Licentie Nationale Zwemdiploma's </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="omgevingswet "></fa-icon></i> Omgevingswet </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="zwembad "></fa-icon></i> Zwembad RI&E </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="arbo "></fa-icon></i> ARBO RI&E </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="analyse "></fa-icon></i> Analyses
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="apool "></fa-icon></i> Zwemwater </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="alegpool "></fa-icon></i> Legionella zwemwater </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="aleg "></fa-icon></i> Legionella leidingwater </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="afloor "></fa-icon></i> Vloerhygiëne </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="aown "></fa-icon></i> Bron/eigenwater </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="calamiteiten "></fa-icon></i> Calamiteiten
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="ongevallen "></fa-icon></i> Ongevallen </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="arboongeval "></fa-icon></i> Arbeidsongevallen </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="incidenten "></fa-icon></i> Incidenten </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="klachten "></fa-icon></i> Klachten </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="defecten "></fa-icon></i> Defecten </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="rapportages "></fa-icon></i> Rapportages
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="pva "></fa-icon></i> Plan van aanpak </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="rapportages "></fa-icon></i> Rapportages </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="logboeken "></fa-icon></i> Logboeken </a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0 ">Sportfondsen</p>
+
+    <ul class="sidebar nav flex-column bg-white mb-0 ">
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="management "></fa-icon></i> Management
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="expafspr "></fa-icon></i> Exploitatie afspraken </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="wm "></fa-icon></i> WM specificatie </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="naslagwerk "></fa-icon></i> Naslagwerk
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="algemeen "></fa-icon></i> Algemeen </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="bent "></fa-icon></i> Bouw & Techniek </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="expl "></fa-icon></i> Exploitaties </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="finance "></fa-icon></i> Finance </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="hrm "></fa-icon></i> HRM </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="marketing "></fa-icon></i> Marketing </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="ict "></fa-icon></i> ICT </a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="register "></fa-icon></i> Register
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="vens "></fa-icon></i> Veilig & Schoon </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="omgevingswet "></fa-icon></i> Omgevingswet </a></li>
+            </ul>
+        </li>
+    </ul>
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0 ">Beheer</p>
+
+    <ul class="sidebar nav flex-column bg-white mb-0 ">
+        <li class="nav-item has-submenu ">
+            <a href="# " class="nav-link text-dark font-italic ">
+                <i class="mr-3 text-primary fa-fw "><fa-icon [icon]="instellingen "></fa-icon></i> Instellingen
+            </a>
+            <ul class="submenu collapse ">
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="orggroep "></fa-icon></i> Organisatiegroepen </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="gebruikers "></fa-icon></i> Gebruikers </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="afdelingen "></fa-icon></i> Afdelingen </a></li>
+                <li><a class="nav-link text-dark font-italic " [routerLink]="['/home']"><i class="mr-3 text-primary fa-fw "><fa-icon [icon]="other "></fa-icon></i> ... </a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- End vertical navbar -->
+
+<div class="page-content p-5 " id="content ">
+    <button id="sidebarCollapse " type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 "><i class="fa fa-bars mr-2 "></i><small class="text-uppercase font-weight-bold "></small></button>
+</div>
